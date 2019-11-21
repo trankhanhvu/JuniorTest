@@ -1,0 +1,8 @@
+.admin__menu .level-0.item-clock-menu > a:before {
+    background-image: url('../images/clock.jpeg');
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content: "";
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+
+        <!--test-->
+        <add id="Magenest_ChapterTwo::clock_menu"
+             title="CountDown"
+             module="Magenest_ChapterTwo"
+             sortOrder="10"
+             resource="Magenest_ChapterTwo::clock_menu"
+        />
+
+        <add id="Magenest_ChapterTwo::clock"
+             title="Clock"
+             module="Magenest_ChapterTwo"
+             sortOrder="20"
+             resource="Magenest_ChapterTwo::clock"
+
+             parent="Magenest_ChapterTwo::clock_menu"
+             action="movie/movie/index"
+        />
+
+        <add id="Magenest_ChapterTwo::clock_config"
+             title="Configuration"
+             module="Magenest_ChapterTwo"
+             sortOrder="30"
+             resource="Magenest_ChapterTwo::clock_config"
+
+             parent="Magenest_ChapterTwo::clock_menu"
+             action="movie/actor/index"
+        />
+
+    </menu>
+</config>
