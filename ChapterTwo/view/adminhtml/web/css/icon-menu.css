@@ -1,8 +1,20 @@
 .admin__menu .level-0.item-clock-menu > a:before {
     background-image: url('../images/clock.jpeg');
-    background-size: 25px 25px;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
     content: "";
+    display: inline-block;
+}
+
+.admin__menu .level-0.item-clock-menu > a > span {
+    display: none;
+}
+
+.admin__menu .level-1.item-clock > a{
+    color:red;
+}
+
+.admin__menu .level-1.item-clock-config > a{
+    color:red;
 }
