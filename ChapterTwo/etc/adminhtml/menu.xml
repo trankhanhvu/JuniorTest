@@ -27,7 +27,7 @@
              resource="Magenest_ChapterTwo::clock_config"
 
              parent="Magenest_ChapterTwo::clock_menu"
-             action="movie/actor/index"
+             action="adminhtml/system_config/edit/section/clock"
         />
 
     </menu>
