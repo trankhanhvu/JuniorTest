@@ -15,7 +15,7 @@
 
             <resource>Magenest_Movie::clock_config</resource>
 
-            <group id="movieinfo" translate="label" type="text"
+            <group id="default_clock" translate="label" type="text"
                    sortOrder="1" showInDefault="1">
 
                 <label>Default Clock</label>
@@ -36,9 +36,15 @@
                     <frontend_model>Magenest\ChapterTwo\Block\Color</frontend_model> <!-- Our block for attaching color picker to text box -->
                 </field>
 
-                <field id="color_clock" translate="label" type="text" sortOrder="10" showInDefault="1">
-                    <label>Color Clock</label>
+                <field id="text_color" translate="label" type="text" sortOrder="10" showInDefault="1">
+                    <label>Text Color</label>
                     <frontend_model>Magenest\ChapterTwo\Block\Color</frontend_model> <!-- Our block for attaching color picker to text box -->
+                </field>
+
+                <field id="clock_type" translate="label" sortOrder="10" showInDefault="1">
+                    <label>Clock Type</label>
+                    <frontend_model>Magenest\ChapterTwo\Block\Adminhtml\Form\Field\ClockType</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
                 </field>
             </group>
 
