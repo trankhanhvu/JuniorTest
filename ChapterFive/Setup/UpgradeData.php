@@ -46,7 +46,8 @@ class UpgradeData implements UpgradeDataInterface
                     'visible_on_front' => false,
                     'used_in_product_listing' => true,
                     'unique' => false,
-                    'apply_to' => ''
+                    'apply_to' => '',
+                    'is_used_in_grid' => true
                 ]
             );
         }
@@ -75,7 +76,8 @@ class UpgradeData implements UpgradeDataInterface
                     'visible_on_front' => false,
                     'used_in_product_listing' => true,
                     'unique' => false,
-                    'apply_to' => ''
+                    'apply_to' => '',
+                    'is_used_in_grid' => true
                 ]
             );
         }
