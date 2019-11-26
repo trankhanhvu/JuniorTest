@@ -1,0 +1,53 @@
+<div class="field col-sm-6 ">
+    <div class="response-field-date">
+        <div class="subtemplate-wrapper">
+            <label for="" style="" class="">Magenest Date</label>
+            <div class="row">
+                <div class="input-box col-sm-12">
+                    <input name="terminwunsch" id="datepicker" style="line-height: 2em" title="Magenest Date" value="" type="text">
+                    <script type="text/javascript">
+                        require([
+                            "jquery",
+                            "mage/calendar"
+                        ], function($){
+                            var disableddates = ["26-11-2019", "27-11-2019"]; // assign your database dates
+                            function DisableSpecificDates(date) {
+                                var string = jQuery.datepicker.formatDate('dd-mm-yy', date);
+                                return [disableddates.indexOf(string) == -1];
+                            }
+
+                            // $('#datepicker').calendar({
+                            //     beforeShowDay: DisableSpecificDates
+                            // });
+
+                            $( "#datepicker" ).calendar(
+                                {
+                                    beforeShowDay: function(d) {
+                                        var day = d.getDate();
+                                        return [(day >= 8 && day < 12)];
+                                    }
+                                });
+                            $('#datepicker').calendar({
+                                    prevText: '&#x3c;zurück', prevStatus: '',
+                                    prevJumpText: '&#x3c;&#x3c;', prevJumpStatus: '',
+                                    nextText: 'Vor&#x3e;', nextStatus: '',
+                                    nextJumpText: '&#x3e;&#x3e;', nextJumpStatus: '',
+                                    monthNames: ['Januar','Februar','März','April','Mai','Juni',
+                                        'Juli','August','September','Oktober','November','Dezember'],
+                                    monthNamesShort: ['Jan','Feb','Mär','Apr','Mai','Jun',
+                                        'Jul','Aug','Sep','Okt','Nov','Dez'],
+                                    dayNames: ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'],
+                                    dayNamesShort: ['So','Mo','Di','Mi','Do','Fr','Sa'],
+                                    dayNamesMin: ['So','Mo','Di','Mi','Do','Fr','Sa'],
+                                    showMonthAfterYear: false,
+                                    dateFormat:'d.m.yy'
+                                }
+                            );
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
