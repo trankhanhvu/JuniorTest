@@ -10,27 +10,27 @@
                 <item name="sortOrder" xsi:type="number">10</item>
             </item>
         </argument>
-<!--        <field name="magenest_date">-->
-<!--            <argument name="data" xsi:type="array">-->
-<!--                <item name="config" xsi:type="array">-->
-<!--                    <item name="dataType" xsi:type="string">string</item>-->
-<!--                    <item name="label" xsi:type="string" translate="true">Magenest Date</item>-->
-<!--                    <item name="formElement" xsi:type="string">date</item>-->
-<!--                    <item name="component" xsi:type="string">Magenest_ChapterFour/js/form/element/date</item>-->
-<!--                    <item name="source" xsi:type="string">page</item>-->
-<!--                    <item name="sortOrder" xsi:type="number">21</item>-->
-<!--                    <item name="dataScope" xsi:type="string">magenest_date</item>-->
-<!--                    <item name="validation" xsi:type="array">-->
-<!--                        <item name="required-entry" xsi:type="boolean">true</item>-->
-<!--                    </item>-->
-<!--                    <item name="options" xsi:type="array">-->
-<!--                        <item name="dateFormat" xsi:type="string">dd-mm-yy</item>-->
-<!--                    </item>-->
-<!--                </item>-->
-<!--            </argument>-->
-<!--        </field>-->
-        <htmlContent name="customer_edit_tab_view_content">
-            <block class="Magenest\ChapterTwo\Block\Clock" name="magenest_date" template="Magenest_ChapterFour::date.phtml"/>
-        </htmlContent>
+        <field name="magenest_date">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="dataType" xsi:type="string">string</item>
+                    <item name="label" xsi:type="string" translate="true">Magenest Date</item>
+                    <item name="formElement" xsi:type="string">date</item>
+                    <item name="component" xsi:type="string">Magenest_ChapterFour/js/form/element/date</item>
+                    <item name="source" xsi:type="string">page</item>
+                    <item name="sortOrder" xsi:type="number">21</item>
+                    <item name="dataScope" xsi:type="string">magenest_date</item>
+                    <item name="validation" xsi:type="array">
+                        <item name="required-entry" xsi:type="boolean">true</item>
+                    </item>
+                    <item name="options" xsi:type="array">
+                        <item name="dateFormat" xsi:type="string">dd-mm-yy</item>
+                    </item>
+                </item>
+            </argument>
+        </field>
+<!--        <htmlContent name="customer_edit_tab_view_content">-->
+<!--            <block class="Magenest\ChapterTwo\Block\Clock" name="magenest_date" template="Magenest_ChapterFour::date.phtml"/>-->
+<!--        </htmlContent>-->
     </fieldset>
 </form>
