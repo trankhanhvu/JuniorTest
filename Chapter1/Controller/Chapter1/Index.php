@@ -31,9 +31,9 @@ class Index extends \Magento\Framework\App\Action\Action
     public function execute()
     {
         $resultPage = $this->resultPageFactory->create();
-//        $ruleModel = $this->ruleFactory->create()->load(1);
-//        $ruleModel->setData('title','hello');
-//        $ruleModel->save();
+        $ruleModel = $this->ruleFactory->create()->load(3);
+        $ruleModel->setData('title','hello');
+        $ruleModel->save();
 
 //        $productModel = $this->productFactory->create()->load(3);
 //        $productModel->setData('magenest_varchar','testne');
@@ -48,16 +48,16 @@ class Index extends \Magento\Framework\App\Action\Action
 
 
 //        $ruleData = $this->ruleDataFactory->create();
-//        $ruleData->setId(2);
+//        $ruleData->setId(4);
 //        $ruleData->setData('title','he');
 //        $rule = $this->ruleRepository->save($ruleData);
 //        $rule = $this->ruleRepository->delete($ruleData);
 
-        $searchCriteria = $this->searchCriteriaBuilder->create();
-        $searchResult = $this->ruleRepository->getList($searchCriteria);
-        foreach ($searchResult->getItems() as $item) {
-            echo $item->getId() . ' => ' . $item->getTitle() . '<br>';
-        }
+//        $searchCriteria = $this->searchCriteriaBuilder->create();
+//        $searchResult = $this->ruleRepository->getList($searchCriteria);
+//        foreach ($searchResult->getItems() as $item) {
+//            echo $item->getId() . ' => ' . $item->getTitle() . '<br>';
+//        }
         return $resultPage;
     }
 }

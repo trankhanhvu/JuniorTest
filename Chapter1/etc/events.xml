@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
-    <event name="model_load_after">
-        <observer name="save-time-load-after" instance="Magenest\Chapter1\Observer\LoadAfter"/>
-    </event>
-<!--    <event name="rule_save_after">-->
-<!--        <observer name="time-save-after" instance="Magenest\Chapter1\Observer\SaveAfter"/>-->
+<!--    <event name="model_load_after">-->
+<!--        <observer name="save-time-load-after" instance="Magenest\Chapter1\Observer\LoadAfter"/>-->
 <!--    </event>-->
+    <event name="rule_save_before">
+        <observer name="time-save-after" instance="Magenest\Chapter1\Observer\SaveAfter"/>
+    </event>
 </config>
